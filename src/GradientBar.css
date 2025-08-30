@@ -1,0 +1,88 @@
+/* Gradient Bar Styling */
+.gradient-bar {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #000000, #ff5851, #ff0000);
+    background-size: 300% 300%; /* Allows animation to cover the full range */
+    animation: gradientAnimation 6s infinite; /* Apply animation */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Navigation Menu Styling */
+  .nav-menu {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .nav-headline {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  /* Button Styling */
+  .nav-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effects */
+  .nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fffbe6;
+    border-color: #fffbe6;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .gradient-bar {
+      height: 50px;
+    }
+  
+    .nav-button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gradient-bar {
+      height: 40px;
+    }
+  
+    .nav-button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
