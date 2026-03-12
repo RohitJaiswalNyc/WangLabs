@@ -1,0 +1,90 @@
+/* Gradient Bar Styling */
+.gradient-bar {
+    width: 100%;
+    height: 110px;
+    background: #B2560D;
+    /* background: linear-gradient(90deg, #00072D, #0000ff); */
+    background-size: 300% 300%; /* Allows animation to cover the full range */
+    display: flex;
+    
+    top: 0;
+    z-index: 1000;
+    padding: 3px 20px;
+    margin: 30px 0px;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Navigation Menu Styling */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .nav-headline {
+    font-size: 50px !important; 
+    font-weight: bold;
+    color: #FFE4B5 !important;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 10px !important;
+  }
+
+  /* Button Styling */
+  .nav-button {
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #FFE4B5 !important;
+    background: transparent;
+    height: 70px;
+    
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effects */
+  .nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fffbe6;
+    border-color: #fffbe6;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .gradient-bar {
+      height: 50px;
+    }
+  
+    .nav-button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gradient-bar {
+      height: 40px;
+    }
+  
+    .nav-button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  

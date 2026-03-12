@@ -1,0 +1,9 @@
+# dependencies
+node_modules/
+
+# production builds
+build/
+dist/
+
+# environment variables (keep your secrets safe!)
+.env

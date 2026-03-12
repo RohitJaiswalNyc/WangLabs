@@ -1,0 +1,40 @@
+/* Gradient Bar Styling */
+
+  /* Button Styling */
+  .nav-button-2 {
+    font-size: 15px;
+    font-weight: bold;
+    height: 70px;
+    
+    border: 2px solid transparent !important; 
+    background: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effects */
+  .nav-button-2:hover {
+    border-color: #3b4763 !important; 
+    border: 2px; 
+    background: rgba(255, 255, 255, 0.2);
+    color: #3b4763;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+  
+    .nav-button-2 {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .nav-button-2 {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
