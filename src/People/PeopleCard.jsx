@@ -1,12 +1,6 @@
 import { useNavigate,Link } from 'react-router-dom';
 import './PeopleCard.css'
 
-// git init
-// git add .
-// git commit -m "Initial commit: Wang Lab website with Cloudinary assets"
-// git branch -M main
-// git remote add origin <your-github-repo-url>
-// git push -u origin main
 
 const PeopleCard = ({id, name, description, image,email}) => {
   const navigate = useNavigate();
