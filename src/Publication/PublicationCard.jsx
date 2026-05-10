@@ -4,7 +4,7 @@ import { GrDocumentPdf } from "react-icons/gr";
 
 const PublicationsCard = ({ date, name, citation , pdfLink, publicationLink }) => {
   return (
-    <div className="bg-[#FFE4B5] my-10 mr-48 ml-24 h-fit p-2 pl-4 py-4 rounded-md">
+    <div className="bg-[#FFE4B5] my-6 md:my-10 mx-4 md:ml-24 md:mr-48 h-fit p-4 md:p-6 rounded-md shadow-md">
         <div className=" text-slate-700  pt-1  rounded text-s  font-mono">{date}</div>
         <div className="font-bold text-2xl py-1 text-slate-700">{name}</div>
         <div className="text-s text-justify text-slate-700">{citation}</div>
