@@ -24,7 +24,7 @@ const PeoplesPage = () => {
   return (
     <div >
       <GradientBar/>
-      <div className="p-20 text-5xl w-full text-center text-white relative overflow-hidden bg-black">
+      <div className="p-10 md:p-20 text-4xl md:text-5xl w-full text-center text-white relative overflow-hidden bg-black">
   
         {/* 1. The Cloudinary Image Background Layer */}
         <div className="absolute inset-0 z-0">

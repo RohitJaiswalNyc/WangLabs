@@ -21,7 +21,7 @@ const PeoplesPage = ({ name, areas, description, infoLink, image }) => {
   return (
     <div>
       <GradientBar/>
-      <div className="p-20 text-5xl w-full text-center text-white relative overflow-hidden bg-black">
+      <div className="p-10 md:p-20 text-4xl md:text-5xl w-full text-center text-white relative overflow-hidden bg-black">
         
         {/* 1. The Cloudinary Image Background Layer */}
         <div className="absolute inset-0 z-0">
@@ -39,9 +39,9 @@ const PeoplesPage = ({ name, areas, description, infoLink, image }) => {
         <div className="relative z-10 font-bold">People</div>
 
       </div>
-      <div className="grid grid-cols-4 mt-10 bg-[#FFFFFF] mx-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 bg-[#FFFFFF] mx-4 md:mx-10 gap-6">
       {peopleData.map((user)=>(
-        <PeopleCard id={user.id} name={user.name} description={user.title} image={user.image} email={user.email}></PeopleCard>
+        <PeopleCard key={user.id} id={user.id} name={user.name} description={user.title} image={user.image} email={user.email}></PeopleCard>
       ))}
       </div>
       <Footer/>

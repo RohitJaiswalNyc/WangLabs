@@ -22,7 +22,7 @@ const News = () => {
   return (
     <div>
       <GradientBar/>
-      <div className="p-20 text-5xl w-full text-center text-white relative overflow-hidden bg-black">
+      <div className="p-10 md:p-20 text-4xl md:text-5xl w-full text-center text-white relative overflow-hidden bg-black">
         
         {/* 1. The Cloudinary Image Background Layer */}
         <div className="absolute inset-0 z-0">
@@ -48,7 +48,7 @@ const News = () => {
           backgroundPosition: '50% 50%' 
         }}
       >News</div> */}
-      <div className=" w-600 mx-auto">
+      <div className="w-full max-w-3xl px-4 mx-auto py-10">
       {_news.map((news)=>(
         <NewsCard name={news.name} images={news.images } date={news.date} description={news.description} pdfLink={news.pdfLink} newsLink={news.newsLink}></NewsCard>
       ))}

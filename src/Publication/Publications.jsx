@@ -51,7 +51,7 @@ const Publications = () => {
   return (
     <div>
       <GradientBar />
-      <div className="p-20 text-5xl w-full text-center text-white relative overflow-hidden bg-black">
+      <div className="p-10 md:p-20 text-4xl md:text-5xl w-full text-center text-white relative overflow-hidden bg-black">
         
         {/* 1. The Cloudinary Image Background Layer */}
         <div className="absolute inset-0 z-0">
@@ -71,7 +71,7 @@ const Publications = () => {
       </div>
 
       {/* Sorting & Filter Lab */}
-      <div className="mx-20 mt-10 flex flex-wrap items-center justify-between gap-4 p-4 bg-[#B2560D] rounded-lg shadow-inner">
+      <div className="mx-4 md:mx-20 mt-10 flex flex-col md:flex-row flex-wrap items-center justify-between gap-4 p-4 bg-[#B2560D] rounded-lg shadow-inner">
         <div className="flex items-center gap-4">
           <label className="font-semibold text-slate-700">Sort by:</label>
           <select 
@@ -99,7 +99,7 @@ const Publications = () => {
         </div>
       </div>
 
-      <div className="m-20 mt-10">
+      <div className="m-4 md:m-20 mt-10">
         {filteredPublications.map((pub, index) => (
           <PublicationCard 
             key={index}

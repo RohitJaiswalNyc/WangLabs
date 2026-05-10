@@ -16,8 +16,8 @@ const UniversityLogo = cld
 
 function Footer() {
   return (
-    <div className='mt-20 gradient-bar-2 grid  grid-cols-2 w-full text-[#FFE4B5] justify-items-center  h-80 items-center justify-center'>
-    <div>
+    <div className='mt-20 gradient-bar-2 grid grid-cols-1 md:grid-cols-2 w-full text-[#FFE4B5] justify-items-center min-h-[320px] md:h-80 py-10 md:py-0 items-center justify-center gap-10 md:gap-0'>
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
       {/* <AdvancedImage className="brightness-0 invert text-[#FFE4B5]" cldImg={UniversityLogo}/> */}
       <AdvancedImage 
         cldImg={UniversityLogo} 
@@ -31,7 +31,7 @@ function Footer() {
           <div className='text-xl'>wangxin@upstate.edu</div>
       </div>
     </div>
-    <div>
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
         <div className='text-3xl'>Location:</div>
         <div className='text-xl'>4th Floor 4205</div>
         <div className='text-xl'>Institute For Human Performance (IHP)</div>
